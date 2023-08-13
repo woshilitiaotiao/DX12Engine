@@ -1,5 +1,0 @@
-[LOG] [Sun Feb  5 19:15:56 2023] Log Init. 
-[LOG] [Sun Feb  5 19:15:56 2023] InitWindows complete. 
-[LOG] [Sun Feb  5 19:15:56 2023] Engine pre initialization complete. 
-[LOG] [Sun Feb  5 19:15:56 2023] Engine initialization complete. 
-[LOG] [Sun Feb  5 19:15:56 2023] Engine post initialization complete. 
