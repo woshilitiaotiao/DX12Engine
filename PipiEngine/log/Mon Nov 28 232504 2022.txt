@@ -1,0 +1,5 @@
+[LOG] [Mon Nov 28 23:25:04 2022] Log Init. 
+[ERROR] [Mon Nov 28 23:25:04 2022] CreateWindow Failed.. 
+[LOG] [Mon Nov 28 23:25:07 2022] Engine pre initialization complete. 
+[LOG] [Mon Nov 28 23:25:07 2022] Engine initialization complete. 
+[LOG] [Mon Nov 28 23:25:07 2022] Engine post initialization complete. 

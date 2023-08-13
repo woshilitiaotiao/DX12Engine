@@ -1,0 +1,292 @@
+﻿  Engine.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  WinMainCommandParameters.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  EngineFactory.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  PipiEngine.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  WindowsEngine.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  WindowsMessageProcessing.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  simple_io_stream.cpp
+  simple_channel.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+  simple_connetion.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+  simple_connetion_tcp.cpp
+  simple_net_drive.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  simple_net_drive_tcp.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(259,59): warning C4305: “参数”: 从“int”到“u_short”截断
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(259,54): warning C4309: “参数”: 截断常量值
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(298,59): warning C4305: “参数”: 从“int”到“u_short”截断
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(298,54): warning C4309: “参数”: 截断常量值
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(334,23): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(345,22): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_channel\simple_net_drive\simple_net_drive_tcp.cpp(406,24): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  simple_net_drive_udp.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+  simple_net_type.cpp
+  simple_object.cpp
+  simple_cpp_helper_file.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_cpp_core_minimal\simple_cpp_helper_file\simple_cpp_helper_file.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  simple_cpp_string_algorithm.cpp
+  simple_image_bmp.cpp
+  simple_image.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_image\simple_image.cpp(85,44): warning C4267: “=”: 从“size_t”转换到“BYTE”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_image\simple_image.cpp(86,45): warning C4267: “=”: 从“size_t”转换到“BYTE”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_image\simple_image.cpp(87,43): warning C4267: “=”: 从“size_t”转换到“BYTE”，可能丢失数据
+  math_utils.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(44,22): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(49,23): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(58,33): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(59,30): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(60,33): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(61,33): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(69,25): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(111,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(170,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(170,13): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(168,48): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(168,16): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(180,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(180,28): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(179,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(179,28): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(189,32): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(189,16): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(188,29): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(188,16): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(204,153): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(204,99): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(204,45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(203,153): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(203,99): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(203,45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(202,153): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(202,99): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(202,45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(265,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(323,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(327,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\math_utils.cpp(329,24): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码...
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\Engine\Platform\Windows\WindowsEngine.cpp(128): warning C4715: “FWindowsEngine::InitWindows”: 不是所有的控件路径都返回值
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+  正在编译...
+  soft_rasterization.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(57,28): warning C4251: “FSimpleConnetion::Channels”: class“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(42): message : 参见“std::list<FSimpleChannel,std::allocator<FSimpleChannel>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_core\simple_connetion.h(62,40): warning C4251: “FSimpleConnetion::LastTime”: class“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”需要有 dll 接口由 class“FSimpleConnetion”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\chrono(701): message : 参见“std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25,35): warning C4251: “FSimpleNetDrive::Connetions”: class“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”需要有 dll 接口由 class“FSimpleNetDrive”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_channel\simple_net_drive.h(25): message : 参见“std::map<int,FSimpleConnetion *,std::less<int>,std::allocator<std::pair<const int,FSimpleConnetion *>>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(37,32): warning C4251: “soft_rasterization::fobject::gobject_array”: class“std::vector<soft_rasterization::fobject *,std::allocator<soft_rasterization::fobject *>>”需要有 dll 接口由 class“soft_rasterization::fobject”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(37): message : 参见“std::vector<soft_rasterization::fobject *,std::allocator<soft_rasterization::fobject *>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(45,28): warning C4251: “soft_rasterization::fcomponent::children”: class“std::vector<soft_rasterization::fcomponent *,std::allocator<soft_rasterization::fcomponent *>>”需要有 dll 接口由 class“soft_rasterization::fcomponent”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(45): message : 参见“std::vector<soft_rasterization::fcomponent *,std::allocator<soft_rasterization::fcomponent *>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(86,27): warning C4251: “soft_rasterization::fmesh_component::vertex_data”: class“std::vector<fvector_3d,std::allocator<fvector_3d>>”需要有 dll 接口由 class“soft_rasterization::fmesh_component”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(86): message : 参见“std::vector<fvector_3d,std::allocator<fvector_3d>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(146,27): warning C4251: “soft_rasterization::frender_data_3d::vertex_data”: class“std::vector<fvector_3d,std::allocator<fvector_3d>>”需要有 dll 接口由 struct“soft_rasterization::frender_data_3d”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(86): message : 参见“std::vector<fvector_3d,std::allocator<fvector_3d>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(147,25): warning C4251: “soft_rasterization::frender_data_3d::index_data”: class“std::vector<uint16_t,std::allocator<uint16_t>>”需要有 dll 接口由 struct“soft_rasterization::frender_data_3d”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(147): message : 参见“std::vector<uint16_t,std::allocator<uint16_t>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(154,27): warning C4251: “soft_rasterization::frender_data_2d::vertex_data”: class“std::vector<fvector_2d,std::allocator<fvector_2d>>”需要有 dll 接口由 struct“soft_rasterization::frender_data_2d”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(154): message : 参见“std::vector<fvector_2d,std::allocator<fvector_2d>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(155,25): warning C4251: “soft_rasterization::frender_data_2d::index_data”: class“std::vector<uint16_t,std::allocator<uint16_t>>”需要有 dll 接口由 struct“soft_rasterization::frender_data_2d”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(147): message : 参见“std::vector<uint16_t,std::allocator<uint16_t>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(190,29): warning C4251: “soft_rasterization::frender_engine::draw_obj”: class“std::vector<soft_rasterization::fmesh_actor *,std::allocator<soft_rasterization::fmesh_actor *>>”需要有 dll 接口由 class“soft_rasterization::frender_engine”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(178): message : 参见“std::vector<soft_rasterization::fmesh_actor *,std::allocator<soft_rasterization::fmesh_actor *>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(193,32): warning C4251: “soft_rasterization::frender_engine::frame_render_data3”: class“std::vector<soft_rasterization::frender_data_3d,std::allocator<soft_rasterization::frender_data_3d>>”需要有 dll 接口由 class“soft_rasterization::frender_engine”的客户端使用
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(193): message : 参见“std::vector<soft_rasterization::frender_data_3d,std::allocator<soft_rasterization::frender_data_3d>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\soft_rasterization\soft_rasterization.h(194,16): warning C4251: “soft_rasterization::frender_engine::wpath”: class“std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>”需要有 dll 接口由 class“soft_rasterization::frender_engine”的客户端使用
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 参见“std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>”的声明
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\soft_rasterization\soft_rasterization.cpp(300,38): warning C4244: “=”: 从“float”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=unsigned char
+          ]
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\soft_rasterization\soft_rasterization.cpp(301,42): warning C4244: “=”: 从“float”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=unsigned char
+          ]
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\soft_rasterization\soft_rasterization.cpp(302,42): warning C4244: “=”: 从“float”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=unsigned char
+          ]
+  matrix_2x2.cpp
+  matrix_3x3.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(36,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(37,25): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(38,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(40,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(41,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(42,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(44,25): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(45,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\matrix\matrix_3x3.cpp(46,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  matrix_4x4.cpp
+  line.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\line.cpp(38,13): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  triangle.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\triangle.cpp(18,18): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\triangle.cpp(18,15): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\triangle.cpp(25,18): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\triangle.cpp(25,15): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\triangle.cpp(32,18): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\primitives\triangle.cpp(32,15): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  quat.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\quaternion\quat.cpp(166,28): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+  rotator.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(16,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(20,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(21,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(22,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(36,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(41,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(42,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(45,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(83,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(88,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(89,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(92,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(122,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(127,24): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(128,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\rotator\rotator.cpp(129,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  vector_2d.cpp
+  vector_2id.cpp
+  vector_3d.cpp
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\vector\vector_3d.cpp(24,4): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\vector\vector_3d.cpp(25,4): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_math\transformation\vector\vector_3d.cpp(26,4): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  vector_3id.cpp
+  vector_4d.cpp
+  vector_4id.cpp
+  vector_color.cpp
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlparser.cpp
+  正在生成代码...
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\public\simple_math\transformation\vector\vector_4d.h(74): warning C4717: “fvector_4d::operator*”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+  simple_c_array_string.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_array\simple_c_array_string.c(66,17): warning C4013: “remove_char_end”未定义；假设外部返回 int
+  string_algorithm.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(240,21): warning C4129: “%”: 不可识别的字符转义序列
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(240,46): warning C4129: “%”: 不可识别的字符转义序列
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(324,1): warning C4090: “初始化”: 不同的“const”限定符
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(442,44): warning C4020: “wfind_string”: 实参太多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(469,21): warning C4129: “%”: 不可识别的字符转义序列
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(469,47): warning C4129: “%”: 不可识别的字符转义序列
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(529,13): warning C4047: “函数”:“wchar_t *”与“wchar_t *[8196]”的间接级别不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(529,10): warning C4024: “wmemset”: 形参和实参 1 的类型不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(532,19): warning C4047: “函数”:“wchar_t *const ”与“wchar_t *[8196]”的间接级别不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(532,16): warning C4024: “_vsnwprintf_s”: 形参和实参 1 的类型不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(536,21): warning C4047: “函数”:“const wchar_t *”与“wchar_t *[8196]”的间接级别不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(536,18): warning C4024: “wcscat”: 形参和实参 2 的类型不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_core\simple_c_string_algorithm\string_algorithm.c(558,1): warning C4090: “初始化”: 不同的“const”限定符
+  simple_guid.c
+  simple_file_helper.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(11,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(16,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(21,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(26,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(31,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(36,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(41,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(46,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(51,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(56,3): warning C4002: 类函数宏的调用“assert”参数过多
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(438,17): warning C4047: “函数”:“int”与“HINSTANCE”的间接级别不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(433,44): warning C4024: “check_ShellExecute_ret”: 形参和实参 1 的类型不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_helper_file\simple_file_helper.c(519,28): warning C4133: “函数”: 从“unsigned short [3]”到“const char *”的类型不兼容
+  simple_c_path.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_path\simple_c_path.c(12,21): warning C4013: “remove_string_start”未定义；假设外部返回 int
+  simple_c_locale_list.c
+  simple_c_time.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_time\simple_c_time.c(74,37): warning C4090: “函数”: 不同的“const”限定符
+  simple_c_windows_register.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(16,42): warning C4133: “函数”: 从“const char *”到“LPCWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(18,48): warning C4133: “函数”: 从“const char *”到“LPCWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(34,42): warning C4133: “函数”: 从“const char *”到“LPCWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(41,52): warning C4133: “函数”: 从“char [260]”到“LPWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(43,51): warning C4133: “函数”: 从“char [260]”到“LPCWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(84,56): warning C4133: “函数”: 从“const char [260]”到“LPCWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(89,50): warning C4133: “函数”: 从“char *”到“LPCWSTR”的类型不兼容
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(95,23): warning C4047: “函数”:“HKEY”与“HKEY *”的间接级别不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(95,15): warning C4024: “RegCloseKey”: 形参和实参 1 的类型不同
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_core_minimal\simple_c_windows\simple_c_windows_register.c(88,1): warning C4090: “初始化”: 不同的“const”限定符
+  simple_c_windows_setting.c
+  simple_c_log.c
+D:\DX12Engine\PipiEngine\PipiEngine\simple_library\private\simple_c_log\simple_c_log.c(34,24): warning C4013: “get_local_time_string”未定义；假设外部返回 int
+  simple_math.c
+  正在生成代码...
+    正在创建库 D:\DX12Engine\PipiEngine\Debug\PipiEngine.lib 和对象 D:\DX12Engine\PipiEngine\Debug\PipiEngine.exp
+  PipiEngine.vcxproj -> D:\DX12Engine\PipiEngine\Debug\PipiEngine.exe
