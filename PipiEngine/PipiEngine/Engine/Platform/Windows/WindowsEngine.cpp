@@ -6,10 +6,12 @@
 
 
 FWindowsEngine::FWindowsEngine()
-	:M4XNumQualityLevels(0)
-	,bMSAA4XEnabled(false)
+	:CurrentFenceIndex(0)
+	, M4XNumQualityLevels(0)
+	, bMSAA4XEnabled(false)
 	, BackBufferFormat(DXGI_FORMAT::DXGI_FORMAT_B8G8R8A8_UNORM)
 	, DepthStencilFormat(DXGI_FORMAT::DXGI_FORMAT_D24_UNORM_S8_UINT)
+	, CurrentSwapBuffIndex(0)
 {
 	for (int i = 0; i < FEngineRenderConfig::GetRenderConfig()->SwapChainCount; i++)
 	{
@@ -49,6 +51,9 @@ int FWindowsEngine::Init(FWinMainCommandParameters InParameters)
 
 int FWindowsEngine::PostInit()
 {
+	//同步
+	WaitGPUCommandQueueComplete();
+
 	for (int i = 0; i < FEngineRenderConfig::GetRenderConfig()->SwapChainCount; i++)
 	{
 		SwapChainBuffer[i].Reset();
@@ -111,6 +116,23 @@ int FWindowsEngine::PostInit()
 	GraphicsCommandList->Close();
 
 	ID3D12CommandList* CommandList[] = { GraphicsCommandList.Get() };
+	
+	//覆盖windows画布
+	//描述视口的尺寸
+	ViewportInfo.TopLeftX = 0;
+	ViewportInfo.TopLeftY = 0;
+	ViewportInfo.Width = FEngineRenderConfig::GetRenderConfig()->ScreenWidth;
+	ViewportInfo.Height = FEngineRenderConfig::GetRenderConfig()->ScreenHight;
+	ViewportInfo.MinDepth = 0.f;
+	ViewportInfo.MinDepth = 1.f;
+
+	//DX矩形
+	ViewportRect.left = 0;
+	ViewportRect.top = 0;
+	ViewportRect.right = FEngineRenderConfig::GetRenderConfig()->ScreenWidth;
+	ViewportRect.bottom = FEngineRenderConfig::GetRenderConfig()->ScreenHight;
+
+	WaitGPUCommandQueueComplete();
 
 	//把命令提交
 	CommandQueue->ExecuteCommandLists(_countof(CommandList), CommandList);
@@ -119,8 +141,51 @@ int FWindowsEngine::PostInit()
 	return 0;
 }
 
-void FWindowsEngine::Tick()
+void FWindowsEngine::Tick(float DeltaTime)
 {
+	//重置录制的相关内容，为下一帧做准备
+	ANALYSIS_HRESULT(CommandAllocator->Reset());
+
+	//重置命令列表
+	GraphicsCommandList->Reset(CommandAllocator.Get(), NULL);
+
+	//指向哪个资源，转换其形态
+	CD3DX12_RESOURCE_BARRIER ResourceBarrierPresent = CD3DX12_RESOURCE_BARRIER::Transition(GetCurrentSwapBuff(), D3D12_RESOURCE_STATE_PRESENT, D3D12_RESOURCE_STATE_RENDER_TARGET);
+	GraphicsCommandList->ResourceBarrier(1, &ResourceBarrierPresent);
+
+	//每帧绑定矩形框
+	GraphicsCommandList->RSSetViewports(1, &ViewportInfo);
+	GraphicsCommandList->RSSetScissorRects(1, &ViewportRect);
+
+	//清除画布
+	GraphicsCommandList->ClearRenderTargetView(GetCuurentSwapBufferView(), DirectX::Colors::Cornsilk, 0, nullptr);
+
+	//清除深度模板缓冲区
+	GraphicsCommandList->ClearDepthStencilView(GetCuurentDepthStencilView(), D3D12_CLEAR_FLAG_DEPTH | D3D12_CLEAR_FLAG_STENCIL, 1.f, 0, 0, NULL);
+
+	//输出的合并阶段
+	D3D12_CPU_DESCRIPTOR_HANDLE SwapBufferView = GetCuurentSwapBufferView();
+	D3D12_CPU_DESCRIPTOR_HANDLE DepthStencilView = GetCuurentDepthStencilView();
+	GraphicsCommandList->OMSetRenderTargets(1, &SwapBufferView, true, &DepthStencilView);
+
+	//指向哪个资源，转换其形态//交换形态
+	CD3DX12_RESOURCE_BARRIER ResourceBarrierRenderTarget = CD3DX12_RESOURCE_BARRIER::Transition(GetCurrentSwapBuff(), D3D12_RESOURCE_STATE_RENDER_TARGET, D3D12_RESOURCE_STATE_PRESENT);
+	GraphicsCommandList->ResourceBarrier(1, &ResourceBarrierRenderTarget);
+
+	//录入完成
+	ANALYSIS_HRESULT(GraphicsCommandList->Close());
+
+	//提交命令
+	ID3D12CommandList* CommandList[] = { GraphicsCommandList.Get() };
+	CommandQueue->ExecuteCommandLists(_countof(CommandList), CommandList);
+
+	//交换链交换两个buff缓冲区
+	ANALYSIS_HRESULT(SwapChain->Present(0, 0));
+	//交换index
+	CurrentSwapBuffIndex = !(bool)CurrentSwapBuffIndex;
+
+	//CPU等待GPU
+	WaitGPUCommandQueueComplete();
 
 }
 
@@ -144,6 +209,45 @@ int FWindowsEngine::PostExit()
 	FEngineRenderConfig::Destroy();
 	Engine_Log("Engine post exit complete.");
 	return 0;
+}
+
+ID3D12Resource* FWindowsEngine::GetCurrentSwapBuff() const
+{
+	return SwapChainBuffer[CurrentSwapBuffIndex].Get();
+}
+
+D3D12_CPU_DESCRIPTOR_HANDLE FWindowsEngine::GetCuurentSwapBufferView() const
+{
+	return CD3DX12_CPU_DESCRIPTOR_HANDLE(RTVHeap->GetCPUDescriptorHandleForHeapStart(), CurrentSwapBuffIndex, RTVDescriptorsize);
+}
+
+D3D12_CPU_DESCRIPTOR_HANDLE FWindowsEngine::GetCuurentDepthStencilView() const
+{
+	return DSVHeap->GetCPUDescriptorHandleForHeapStart();
+}
+
+void FWindowsEngine::WaitGPUCommandQueueComplete()
+{
+	CurrentFenceIndex++;
+
+	//向GPU设置新的隔离点 等待GPU处理完信号
+	ANALYSIS_HRESULT(CommandQueue->Signal(Fence.Get(), CurrentFenceIndex));
+
+	if (Fence->GetCompletedValue() < CurrentFenceIndex)
+	{
+		//创建或打开一个事件内核对象，返回内核对象句柄
+		//SECURITY_ATTRIBUTES
+		//CREATE_EVENT_INITIAL_SET  0x00000002
+		//CREATE_EVENT_MANUAL_RESET 0x00000001
+		//ResentEvents
+		HANDLE EventEX = CreateEventEx(NULL, NULL, 0, EVENT_ALL_ACCESS);
+		//GPU完成后通知Handle
+		ANALYSIS_HRESULT(Fence->SetEventOnCompletion(CurrentFenceIndex, EventEX));
+
+		//等待GPU，阻塞主线程
+		WaitForSingleObject(EventEX, INFINITE);
+		CloseHandle(EventEX);
+	}
 }
 
 bool FWindowsEngine::InitWindows(FWinMainCommandParameters InParameters)
@@ -277,20 +381,16 @@ bool FWindowsEngine::InitDirect3D()
 	* 将CommandList关联到Allocator
 	* ID3D12PipelineState
 	*/
-	HRESULT CMLResult = D3dDevice->CreateCommandList(0, D3D12_COMMAND_LIST_TYPE::D3D12_COMMAND_LIST_TYPE_DIRECT, CommandAllocator.Get(), NULL, IID_PPV_ARGS(GraphicsCommandList.GetAddressOf()));
-
-	if (FAILED(CMLResult))
-	{
-		Engine_Log_Error("Error = %i", (int)CMLResult);
-	}
+	ANALYSIS_HRESULT(D3dDevice->CreateCommandList(0, D3D12_COMMAND_LIST_TYPE::D3D12_COMMAND_LIST_TYPE_DIRECT, CommandAllocator.Get(), NULL, IID_PPV_ARGS(GraphicsCommandList.GetAddressOf())));
 
 	//重置命令列表
-	GraphicsCommandList->Close();
+	ANALYSIS_HRESULT(GraphicsCommandList->Close());
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//多重采样
 	D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS QualityLevels;
+	QualityLevels.Format = BackBufferFormat;
 	QualityLevels.SampleCount = 4;
 	QualityLevels.Flags = D3D12_MULTISAMPLE_QUALITY_LEVEL_FLAGS::D3D12_MULTISAMPLE_QUALITY_LEVELS_FLAG_NONE;
 	QualityLevels.NumQualityLevels = 0;
@@ -321,12 +421,8 @@ bool FWindowsEngine::InitDirect3D()
 	SwapChainDesc.SampleDesc.Count = bMSAA4XEnabled ? 4 : 1;
 	SwapChainDesc.SampleDesc.Quality = bMSAA4XEnabled ? (M4XNumQualityLevels - 1) : 0;
 
-	CMLResult = DXGIFactory->CreateSwapChain(CommandQueue.Get(), &SwapChainDesc, SwapChain.GetAddressOf());
+	ANALYSIS_HRESULT(DXGIFactory->CreateSwapChain(CommandQueue.Get(), &SwapChainDesc, SwapChain.GetAddressOf()));
 
-	if (FAILED(CMLResult))
-	{
-		Engine_Log_Error("Error = %i", (int)CMLResult);
-	}
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

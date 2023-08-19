@@ -42,7 +42,10 @@ int Init(FEngine* InEngine,HINSTANCE hInstance, HINSTANCE prevInstance, PSTR cmd
 
 void Tick(FEngine* InEngine)
 {
-	InEngine->Tick();
+	float DeltaTime = 0.03f;
+	InEngine->Tick(DeltaTime);
+
+	Sleep(30);
 }
 
 int Exit(FEngine* InEngine)
@@ -84,10 +87,28 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance,PSTR cmdLine, int
 		//初始化
 		Init(Engine, hInstance, prevInstance, cmdLine, showCmd);
 
+		MSG EngineMsg = { 0 };
+
 		//渲染出图
-		while (true)
+		while (EngineMsg.message != WM_QUIT)
 		{
-			Tick(Engine);
+			//PM_NOREMOVE 消息不从队列里移除
+			//PM_REMOVE   消息从队列里移除
+			//PM_NOYIELD  此标准使系统不释放等待调用程序空闲的线程
+			//
+			//PM_QS_INPUT 处理鼠标和键盘消息      
+			//PM_QS_POSTMESSAGE 处理所以被寄送的消息，包括计时器和热键
+			//PM_QS_PAINT 处理画图消息       
+			//PM_QS_SENDMESSAGE 处理所以发送消息
+			if (PeekMessage(&EngineMsg, 0, 0, 0, PM_REMOVE))
+			{
+				TranslateMessage(&EngineMsg);
+				DispatchMessage(&EngineMsg);
+			}
+			else
+			{
+				Tick(Engine);
+			}
 		}
 
 		//退出
