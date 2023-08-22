@@ -5,6 +5,7 @@
 
 class FWindowsEngine :public FEngine
 {
+	friend class IRenderingInterface;
 public:
 	FWindowsEngine();
 
@@ -31,6 +32,7 @@ protected:
 private:
 	bool InitWindows(FWinMainCommandParameters InParameters);
 	bool InitDirect3D();
+	void PostInitDirect3D();
 
 protected:
 	UINT64 CurrentFenceIndex;

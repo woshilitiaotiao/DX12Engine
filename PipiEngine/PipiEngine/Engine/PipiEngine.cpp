@@ -74,6 +74,8 @@ int Exit(FEngine* InEngine)
 	return ReturnValue;
 }
 
+FEngine* Engine = NULL;
+
 //hInstance 自己的实例
 //prevInstance 上次的实例
 //cmdLine 传递命令
@@ -81,8 +83,8 @@ int Exit(FEngine* InEngine)
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance,PSTR cmdLine, int showCmd)
 {
 	int ReturnValue = 0;
-
-	if (FEngine* Engine = FEngineFactory::CreateEngine())
+	Engine = FEngineFactory::CreateEngine();
+	if (Engine)
 	{
 		//初始化
 		Init(Engine, hInstance, prevInstance, cmdLine, showCmd);
